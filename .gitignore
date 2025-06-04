@@ -8,3 +8,7 @@
 !express/
 !express/src/
 !express/src/**
+
+
+# Exclude all .env files on express
+express/.env
