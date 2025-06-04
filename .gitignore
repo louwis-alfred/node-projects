@@ -1,0 +1,10 @@
+# Ignore everything
+*
+
+# Include only .gitignore
+!.gitignore
+
+# Include express/src folder and its contents
+!express/
+!express/src/
+!express/src/**
