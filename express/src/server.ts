@@ -2,14 +2,15 @@ import express from "express";
 import cors from "cors";
 import dotenv from "dotenv";
 import authRouter from "./routes/auth";
+import { authMiddleware } from "./middleware/authMiddleware";
 dotenv.config();
 
 const app = express();
 
 app.use(cors());
 
-app.get("/", (req, res) => {
-  res.send("Hello World");
+app.get("/", authMiddleware, (req, res) => {
+  res.send("Secured Endpoint");
 });
 
 app.use(express.json());
