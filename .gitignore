@@ -1,9 +1,10 @@
-# Ignore all files in express folder
+# Ignore all files in express folder except specific directories
 express/*
-
-# But keep src directory and routes
 !express/src/
 !express/src/routes/
+
+# Ignore the entire subscription-tracker project
+subscription-tracker/
 
 # Ignore node_modules everywhere
 node_modules/
