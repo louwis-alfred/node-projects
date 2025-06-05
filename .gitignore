@@ -10,5 +10,7 @@
 !express/src/**
 
 
-# Exclude all .env files on express
+# Ignore specific files inside express folder
 express/.env
+express/tsconfig.json
+express/package.json
